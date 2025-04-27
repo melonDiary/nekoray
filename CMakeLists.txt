@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.24)
 
 project(nekobox VERSION 0.1 LANGUAGES CXX)
 
@@ -18,6 +18,9 @@ endif ()
 # Find Qt
 if (NOT QT_VERSION_MAJOR)
     set(QT_VERSION_MAJOR 5)
+    set(Qt5_DIR    "/usr/local/opt/qt@5/lib/cmake/Qt5")
+    include_directories(/usr/local/opt/qt@5/include)
+    link_directories(/usr/local/opt/qt@5/lib)
 endif ()
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network Svg LinguistTools)
 
@@ -85,7 +88,11 @@ endif ()
 if (NKR_NO_YAML)
     nkr_add_compile_definitions(NKR_NO_YAML)
 else ()
-    find_package(yaml-cpp CONFIG REQUIRED) # only Release is built
+    set(yaml-cpp_DIR "/usr/local/opt/yaml-cpp")
+    include_directories(${yaml-cpp_DIR}/include)
+    link_directories(${yaml-cpp_DIR}/lib)
+    message("yaml-cpp_DIR: ${yaml-cpp_DIR}")
+    find_package(yaml-cpp REQUIRED) # only Release is built
     list(APPEND NKR_EXTERNAL_TARGETS yaml-cpp)
 endif ()
 
