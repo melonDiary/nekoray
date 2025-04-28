@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir qtsdk
 cd qtsdk
 if [ "$DL_QT_VER" == "5.15" ]; then

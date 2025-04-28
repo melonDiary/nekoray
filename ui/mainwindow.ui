@@ -92,7 +92,7 @@
         </property>
        </widget>
       </item>
-      <item>
+      <!-- <item>
        <widget class="QToolButton" name="toolButton_ads">
         <property name="text">
          <string>Ads</string>
@@ -114,7 +114,7 @@
          <enum>Qt::ToolButtonTextUnderIcon</enum>
         </property>
        </widget>
-      </item>
+      </item> -->
       <item>
        <widget class="QToolButton" name="toolButton_document">
         <property name="text">

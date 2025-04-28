@@ -319,7 +319,7 @@ namespace NekoGui {
             proxy_domain = "";
             block_ip = "";
             block_domain =
-                "geosite:category-ads-all\n"
+                // "geosite:category-ads-all\n"
                 "domain:appcenter.ms\n"
                 "domain:firebase.io\n"
                 "domain:crashlytics.com\n";

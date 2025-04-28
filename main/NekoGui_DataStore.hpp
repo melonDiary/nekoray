@@ -1,4 +1,7 @@
 // DO NOT INCLUDE THIS
+#pragma once
+#include "main/Const.hpp"
+#include "main/NekoGui_ConfigItem.hpp"
 
 namespace NekoGui {
 

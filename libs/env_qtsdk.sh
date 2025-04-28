@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Setting Qt Sdk Dir to" "$1"
 export Qt5_DIR="$1"
 export Qt6_DIR=$Qt5_DIR

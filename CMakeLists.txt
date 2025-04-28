@@ -19,7 +19,7 @@ endif ()
 if (NOT QT_VERSION_MAJOR)
     set(QT_VERSION_MAJOR 6)
 endif ()
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network Svg LinguistTools)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Widgets Network Svg LinguistTools)
 
 if (NKR_CROSS)
     set_property(TARGET Qt5::moc PROPERTY IMPORTED_LOCATION /usr/bin/moc)
