@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-source libs/env_deploy.sh
+source ./env_deploy.sh
 ENV_NEKORAY=1
-source libs/get_source_env.sh
+source ./get_source_env.sh
 pushd ..
 
 ####

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd libs
+#cd libs
 
 # 参数
 if [ -z $cmake ]; then
@@ -41,7 +41,7 @@ ninja && ninja install
 cd ../..
 
 #### yaml-cpp ####
-curl -L -o dl.zip https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.zip
+#curl -L -o dl.zip https://github.com/jbeder/yaml-cpp/archive/refs/tags/yaml-cpp-0.7.0.zip
 unzip dl.zip
 
 cd yaml-*
