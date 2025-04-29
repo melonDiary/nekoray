@@ -396,7 +396,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     args.push_back(Int2String(NekoGui::dataStore->core_port));
     if (NekoGui::dataStore->flag_debug) args.push_back("-debug");
 
-    // Start core
+    // Start core 
     runOnUiThread(
         [=] {
             core_process = new NekoGui_sys::CoreProcess(core_path, args);

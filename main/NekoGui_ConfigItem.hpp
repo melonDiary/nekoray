@@ -1,4 +1,8 @@
 // DO NOT INCLUDE THIS
+#pragma once
+#include <QString>
+#include <QMap>
+#include <QJsonObject>
 
 namespace NekoGui_ConfigItem {
     // config 工具
